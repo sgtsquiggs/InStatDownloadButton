@@ -1,12 +1,16 @@
 # InStatDownloadButton 
 
+[![Twitter](https://img.shields.io/badge/twitter-@JiromTomson-blue.svg?style=flat
+)](https://twitter.com/JiromTomson)
+[![CI Status](https://travis-ci.org/tularovbeslan/InStatDownloadButton.svg?branch=master)](https://travis-ci.org/tularovbeslan@gmail.com/InStatDownloadButton)
+[![Version](https://img.shields.io/cocoapods/v/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
+![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-red.svg)
+![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)(https://cocoapods.org/pods/InStatDownloadButton)
+[![Platform](https://img.shields.io/cocoapods/p/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
 ![IMG_1268 TRIM 2019-03-12 16_27_11](https://user-images.githubusercontent.com/4906243/54244155-65377b80-453c-11e9-8303-d24289b855b8.gif)
 
 
-[![CI Status](https://img.shields.io/travis/tularovbeslan@gmail.com/InStatDownloadButton.svg?style=flat)](https://travis-ci.org/tularovbeslan@gmail.com/InStatDownloadButton)
-[![Version](https://img.shields.io/cocoapods/v/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
-[![License](https://img.shields.io/cocoapods/l/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
-[![Platform](https://img.shields.io/cocoapods/p/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
+
 
 ## Customize
 
@@ -59,10 +63,6 @@ pod 'InStatDownloadButton'
 # Author
 
 Beslan Tularov | <a href="url"><img src="https://user-images.githubusercontent.com/4906243/54856729-037dcb00-4d0d-11e9-9d6f-8a5b8e316ff8.png" height="15"> </a> [@JiromTomson](https://twitter.com/JiromTomson)
-
-[<img src="https://user-images.githubusercontent.com/4906243/54857819-5efe8780-4d12-11e9-8100-bce42594f8a3.png" height="32" width="121">](https://github.com/tularovbeslan)
-
-[<img src="https://user-images.githubusercontent.com/4906243/54857820-5efe8780-4d12-11e9-8a91-4a8e85b89130.png" height="32" width="121">](https://twitter.com/JiromTomson)
 
 ## License
 
