@@ -12,6 +12,10 @@
 ![IMG_1268 TRIM 2019-03-12 16_27_11](https://user-images.githubusercontent.com/4906243/54244155-65377b80-453c-11e9-8303-d24289b855b8.gif)
 
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 ## Customize
 
 ```
@@ -44,11 +48,6 @@ func setupIndicatorView() {
     downloadButton.indicatorView.trackColor = .black
 }
 ```
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 ## Installation
