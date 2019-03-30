@@ -5,7 +5,8 @@
 [![CI Status](https://travis-ci.org/tularovbeslan/InStatDownloadButton.svg?branch=master)](https://travis-ci.org/tularovbeslan@gmail.com/InStatDownloadButton)
 [![Version](https://img.shields.io/cocoapods/v/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
 ![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-red.svg)
-![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)(https://cocoapods.org/pods/InStatDownloadButton)
+![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)
+[![License](https://img.shields.io/cocoapods/l/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
 [![Platform](https://img.shields.io/cocoapods/p/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
 
 ![IMG_1268 TRIM 2019-03-12 16_27_11](https://user-images.githubusercontent.com/4906243/54244155-65377b80-453c-11e9-8303-d24289b855b8.gif)
