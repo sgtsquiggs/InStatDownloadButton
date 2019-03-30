@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InStatDownloadButton'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'InStatDownloadButton - progressive'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.author           = { 'tularovbeslan@gmail.com' => 'tularovbeslan@gmail.com' }
   s.source           = { :git => 'https://github.com/tularovbeslan/InStatDownloadButton.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/JiromTomson'
-  s.swift_version = '4.2'
+  s.swift_version = '5'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'InStatDownloadButton/Classes/**/*'
