@@ -5,7 +5,7 @@
 
 import UIKit
 
-public class InStatCircularProgress: UIView, CAAnimationDelegate {
+public class InStatCircularProgress: UIButton, CAAnimationDelegate {
 
 	private let stopLayer: CALayer = CALayer()
 

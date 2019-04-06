@@ -30,9 +30,12 @@ class ViewController: UIViewController {
 			downloadButton.downloadState = .pending
 		case 2:
 			downloadButton.downloadState = .downloading
-			downloadButton.progressView.animate(fromAngle: 0, toAngle: 360, duration: 2) { _ in
-				self.segmentedControl.selectedSegmentIndex = 4
-				self.downloadButton.downloadState = .finish
+			downloadButton.progressView.animate(fromAngle: 0, toAngle: 360, duration: 10) { _ in
+				if self.downloadButton.progressView.isAnimating() {
+					self.downloadButton.downloadState = .stop
+				} else {
+					self.segmentedControl.selectedSegmentIndex = 4
+				}
 			}
 		case 3:
 			downloadButton.downloadState = .stop
@@ -68,6 +71,13 @@ class ViewController: UIViewController {
 		downloadButton.indicatorView.glowAmount = 0.9
 		downloadButton.indicatorView.set(colors: UIColor.cyan)
 		downloadButton.indicatorView.trackColor = .black
+	}
+
+	@IBAction func didPress(_ sender: InStatDownloadButton) {
+
+		if self.downloadButton.progressView.isAnimating() {
+			self.downloadButton.downloadState = .stop
+		}
 	}
 }
 
