@@ -111,6 +111,18 @@ public class InStatCircularProgress: UIButton, CAAnimationDelegate {
 		}
 	}
 
+    public var stopCornerRadius: CGFloat? {
+        didSet {
+            stopLayer.setNeedsDisplay()
+        }
+    }
+    
+    public var stopSize: CGSize? {
+        didSet {
+            stopLayer.setNeedsDisplay()
+        }
+    }
+
 	public var progressInsideFillColor: UIColor? = nil {
 		didSet {
 			progressLayer.progressInsideFillColor = progressInsideFillColor ?? .clear
@@ -267,13 +279,35 @@ public class InStatCircularProgress: UIButton, CAAnimationDelegate {
 		progressLayer.setNeedsDisplay()
 	}
 
-	func setupStopLayer() {
+	private func setupStopLayer() {
 
 		stopLayer.backgroundColor = Color.Blue.medium.cgColor
 		stopLayer.borderWidth = 0
-		stopLayer.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.width * 0.3, height: frame.height * 0.3)
-		stopLayer.cornerRadius = stopLayer.frame.width * 0.15
+        configureStopSize()
+        configureStopCornerRadius()
 		stopLayer.position = center
 		stopLayer.backgroundColor = stopColor
 	}
+    
+    private func configureStopSize() {
+        
+        var frame = self.frame
+        if let size = stopSize {
+            frame.size = size
+            stopLayer.frame = frame
+        } else {
+            frame.size = CGSize(width: frame.width * 0.3, height: frame.height * 0.3)
+            stopLayer.frame = frame
+        }
+    }
+    
+    private func configureStopCornerRadius() {
+        
+        if let cornerRadius = stopCornerRadius {
+            stopLayer.cornerRadius = cornerRadius
+        } else {
+            stopLayer.cornerRadius = stopLayer.frame.width * 0.15
+        }
+    }
+
 }

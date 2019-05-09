@@ -14,6 +14,7 @@ public class InStatDownloadButton: UIButton {
 	public var downloadState: InStatDownloadButtonState = .start {
 		didSet {
 
+            isHidden = false
 			switch downloadState {
 			case .start:
 				isEnabled = true
