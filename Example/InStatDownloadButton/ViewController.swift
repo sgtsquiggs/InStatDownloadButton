@@ -32,9 +32,12 @@ class ViewController: UIViewController {
 			downloadButton.downloadState = .downloading
 			downloadButton.progressView.animate(fromAngle: 0, toAngle: 360, duration: 10) { _ in
 				if self.downloadButton.progressView.isAnimating() {
-					self.downloadButton.downloadState = .stop
-				} else {
-					self.segmentedControl.selectedSegmentIndex = 4
+                    self.downloadButton.downloadState = .finish
+                    self.segmentedControl.selectedSegmentIndex = 4
+                } else {
+                    if self.downloadButton.downloadState == .stop {
+                        self.segmentedControl.selectedSegmentIndex = 3
+                    }
 				}
 			}
 		case 3:
@@ -42,6 +45,7 @@ class ViewController: UIViewController {
 
 		case 4:
 			downloadButton.downloadState = .finish
+            
 		default: break
 		}
 	}
