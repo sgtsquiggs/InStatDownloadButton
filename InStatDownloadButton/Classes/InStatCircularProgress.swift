@@ -104,6 +104,7 @@ public class InStatCircularProgress: UIButton, CAAnimationDelegate {
 		}
 	}
 
+	/// background color for stop layer
 	public var stopColor: CGColor = UIColor.blue.cgColor {
 		didSet {
 			stopLayer.backgroundColor = stopColor
@@ -111,17 +112,26 @@ public class InStatCircularProgress: UIButton, CAAnimationDelegate {
 		}
 	}
 
+    /// fixed corner radius for stop layer
     public var stopCornerRadius: CGFloat? {
         didSet {
             stopLayer.setNeedsDisplay()
         }
     }
     
+    /// fixed size for stop layer
     public var stopSize: CGSize? {
         didSet {
             stopLayer.setNeedsDisplay()
         }
     }
+
+	/// dimension is relative (%)
+	public var stopRelativeSize: CGFloat? {
+		didSet {
+			stopLayer.setNeedsDisplay()
+		}
+	}
 
 	public var progressInsideFillColor: UIColor? = nil {
 		didSet {
@@ -295,7 +305,10 @@ public class InStatCircularProgress: UIButton, CAAnimationDelegate {
         if let size = stopSize {
             frame.size = size
             stopLayer.frame = frame
-        } else {
+		} else if let relativeSize = stopRelativeSize {
+			frame.size = CGSize(width: (frame.width * relativeSize) / 100, height: (frame.height * relativeSize) / 100)
+			stopLayer.frame = frame
+		} else {
             frame.size = CGSize(width: frame.width * 0.3, height: frame.height * 0.3)
             stopLayer.frame = frame
         }

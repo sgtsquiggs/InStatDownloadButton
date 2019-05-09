@@ -62,8 +62,9 @@ class ViewController: UIViewController {
 		downloadButton.progressView.glowAmount = 0.9
 		downloadButton.progressView.stopColor = UIColor.red.cgColor
 		downloadButton.progressView.set(colors: UIColor.cyan, UIColor.orange)
-        downloadButton.progressView.stopCornerRadius = 0
-        downloadButton.progressView.stopSize = CGSize(width: 6, height: 6)
+        downloadButton.progressView.stopCornerRadius = 5
+		downloadButton.progressView.stopRelativeSize = 40
+//        downloadButton.progressView.stopSize = CGSize(width: 6, height: 6)
 	}
 
 	func setupIndicatorView() {
