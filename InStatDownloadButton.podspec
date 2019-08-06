@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InStatDownloadButton'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.summary          = 'InStatDownloadButton - progressive'
 
 # This description is used to generate tags and improve search results.
@@ -31,5 +31,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'InStatDownloadButton/Classes/**/*'
-  s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
 end
