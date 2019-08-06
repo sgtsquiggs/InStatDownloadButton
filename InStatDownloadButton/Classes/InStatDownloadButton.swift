@@ -14,6 +14,10 @@ public class InStatDownloadButton: UIButton {
 	public var downloadState: InStatDownloadButtonState = .start {
 		didSet {
 
+            if image == nil {
+                self.image = self.currentImage
+            }
+            
             isHidden = false
 			switch downloadState {
 			case .start:
